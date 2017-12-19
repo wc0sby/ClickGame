@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Santa's Workshop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <header>
+    </header>
+
+    <section class="row">
+      <!-- creates the first group for board and info -->
+        <article class="col-md-12">
+          <div class="img-container">
+            <h1>Santa's Factory</h1>
+            <img id="theGift" src="./assets/christmas-present.png" alt="">
+            <canvas id="myCanvas" ></canvas>
+      <!--This is where we will update the score-->
+          <div data-score id="score-board"></div>
+          <p id="status"></p>
+          <button id="moveMe" class="btn-info move"  type="button" name="move">MOVE</button>
+          <!-- <img id="sleigh" src="./assets/sleigh.png" alt=""> -->
+        </div>
+        </article>
+
+      </section>
+      <!-- creates the village (store for bonuses) -->
+      <section class="row spacing">
+
+        <div class="col-md-offset-3 col-md-6 centertain">
+          <h2>The Workshop</h2>
+          <button data-value=100 class="col-md-3 border powerUp" id="bonus-1">
+            <img class="store" id="gumdrop" src="./assets/Gumdrop_Pose.png" alt="">
+            <p>100</p>
+          </button>
+          <button data-value=1000 class="col-md-3 border powerUp" id="bonus-2">
+            <img class="store"   id="reindeer" src="./assets/reindeer.gif" alt="">
+            <p>1,000</p>
+          </button>
+          <button data-value=10000 class="col-md-3 border powerUp" id="bonus-3">
+            <img class="store"   id="tree" src="./assets/tree.gif" alt="">
+            <p>10,000</p>
+          </button>
+          <button data-value=100000 class="col-md-3 border powerUp" id="bonus-4">
+            <img class="store"   id="santa" src="./assets/santa.gif" alt="">
+            <p>100,000</p>
+          </button>
+        </div>
+
+    </section>
+
+  </body>
+</html>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./scripts/canvas.js"></script>
+<script type="text/javascript" src="./scripts/main.js"></script>
